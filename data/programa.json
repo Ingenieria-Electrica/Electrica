@@ -1,0 +1,80 @@
+{
+  "nombre": "Ingeniería Eléctrica",
+  "universidad": "Universidad Nacional de Colombia",
+  "sede": "Medellín",
+  "facultad": "Facultad de Minas",
+  "lema": "Trabajo y Rectitud",
+  "descripcion": [
+    "La Ingeniería Eléctrica en la Facultad de Minas de la Universidad Nacional de Colombia (Sede Medellín) es un programa de excelencia científica, innovación tecnológica y amplia tradición, orientado a la investigación, planeación, diseño, construcción, operación y mantenimiento de los sistemas de generación, transmisión, distribución y uso final de la energía eléctrica.",
+    "Forma ingenieros integrales con sólido rigor analítico, criterio ético y sensibilidad ambiental, preparados para liderar la operación de sistemas interconectados de potencia, la integración masiva de fuentes renovables no convencionales, las redes inteligentes (Smart Grids), las subestaciones digitales, el control y la automatización industrial, impulsando la transición energética sostenible del país."
+  ],
+  "rutas": [
+    {
+      "id": "sistemas-potencia",
+      "nombre": "Sistemas Eléctricos de Potencia & Redes Inteligentes (Smart Grids)",
+      "descripcion": "Modelado de líneas, flujo de carga, estabilidad angular, despacho económico, mercados eléctricos y diseño de redes de transmisión y distribución.",
+      "icono": "potencia",
+      "color": "#E58E00"
+    },
+    {
+      "id": "maquinas-accionamientos",
+      "nombre": "Máquinas Eléctricas & Accionamientos Industriales",
+      "descripcion": "Generadores sincrónicos, transformadores de gran potencia, motores de inducción, accionamientos de velocidad variable y electrónica de potencia.",
+      "icono": "maquinas",
+      "color": "#FFBB02"
+    },
+    {
+      "id": "protecciones-subestaciones",
+      "nombre": "Protecciones Eléctricas & Subestaciones Digitales",
+      "descripcion": "Relés numéricos, esquemas de teleprotección diferencial y distancia, coordinación de aislamiento, alta tensión y norma IEC 61850.",
+      "icono": "protecciones",
+      "color": "#27AFC9"
+    },
+    {
+      "id": "energias-renovables",
+      "nombre": "Energías Renovables & Transición Energética Justa",
+      "descripcion": "Generación solar fotovoltaica, eólica, almacenamiento con baterías (BESS), microredes resilientes y descarbonización energética.",
+      "icono": "renovables",
+      "color": "#006633"
+    },
+    {
+      "id": "control-automatizacion",
+      "nombre": "Control, Automatización Industrial & Telecomunicaciones",
+      "descripcion": "Sistemas de control en tiempo real, supervisión SCADA, instrumentación electrónica, procesamiento digital de señales y teleinformática.",
+      "icono": "control",
+      "color": "#6D5C55"
+    }
+  ],
+  "ficha": [
+    { "etiqueta": "Título que otorga", "valor": "Ingeniero(a) Electricista" },
+    { "etiqueta": "Créditos del plan", "valor": "170 créditos" },
+    { "etiqueta": "Duración del plan", "valor": "10 semestres" },
+    { "etiqueta": "Modalidad", "valor": "Presencial" },
+    { "etiqueta": "Jornada", "valor": "Diurna" },
+    { "etiqueta": "Sede y facultad", "valor": "Medellín · Facultad de Minas" },
+    { "etiqueta": "Área Curricular", "valor": "Ingeniería Eléctrica e Ingeniería de Control (IEIC)" },
+    { "etiqueta": "Código SNIES", "valor": "120" },
+    { "etiqueta": "Código SIA", "valor": "3535" },
+    { "etiqueta": "Año de Creación", "valor": "1967" },
+    { "etiqueta": "Normativa Vigente", "valor": "Acuerdo del Consejo Académico · Facultad de Minas UNAL" }
+  ],
+  "cifras": [
+    { "valor": "170", "texto": "créditos" },
+    { "valor": "10", "texto": "semestres" },
+    { "valor": "Presencial", "texto": "jornada diurna" },
+    { "valor": "SNIES 120", "texto": "registro ministerial" }
+  ],
+  "acreditacion": {
+    "estado": "Acreditación de Alta Calidad · Ministerio de Educación Nacional",
+    "hitos": [
+      { "anio": "Desde 1967", "texto": "Más de cinco décadas formando a los líderes de la industria eléctrica, la ingeniería de potencia y la investigación tecnológica en Colombia." },
+      { "anio": "Alta Calidad", "texto": "Acreditación de Alta Calidad otorgada por el Ministerio de Educación Nacional, que certifica el rigor y pertinencia del programa." },
+      { "anio": "Área IEIC", "texto": "Adscrito al Área Curricular de Ingeniería Eléctrica e Ingeniería de Control, con modernos laboratorios de máquinas, circuitos y alta tensión." }
+    ],
+    "nota": "Para trámites y consultas curriculares, dirigirse a la Dirección del Área Curricular de Ingeniería Eléctrica e Ingeniería de Control (IEIC), Campus Robledo."
+  },
+  "fuentes": [
+    { "titulo": "Página oficial del programa · Facultad de Minas UNAL", "url": "https://old-minas.medellin.unal.edu.co/formacion/pregrado/ingenieriaelectrica" },
+    { "titulo": "Facultad de Minas · Universidad Nacional de Colombia", "url": "https://minas.medellin.unal.edu.co/" }
+  ]
+}

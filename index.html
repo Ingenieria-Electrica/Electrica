@@ -1,0 +1,291 @@
+<!--
+  ==========================================================================
+  PORTAL DIGITAL OFICIAL · INGENIERÍA ELÉCTRICA
+  UNIVERSIDAD NACIONAL DE COLOMBIA · FACULTAD DE MINAS (SEDE MEDELLÍN)
+
+  Diseño, arquitectura de software y desarrollo realizado por:
+  SANTIAGO ESCOBAR ARIAS
+  Representante Estudiantil de Ingeniería de Sistemas
+  Contacto: saescobara@unal.edu.co | Instagram: @s_escobar__
+
+  Colaborador del programa:
+  Kevin David Aristizabal Giraldo · Karistizabalg@unal.edu.co
+
+  © 2026 Santiago Escobar Arias. Todos los derechos reservados.
+  Obra protegida por la Ley 23 de 1982 (Colombia) y la Decisión 351 (CAN).
+  Queda prohibida su clonación, plagio o remoción de créditos de autoría.
+  ==========================================================================
+-->
+<!doctype html>
+<html lang="es">
+<head>
+  <!-- METADATOS DE AUTORÍA Y PROPIEDAD INTELECTUAL -->
+  <meta name="author" content="Santiago Escobar Arias · Representante Estudiantil de Ingeniería de Sistemas">
+  <meta name="creator" content="Santiago Escobar Arias">
+  <meta name="publisher" content="Santiago Escobar Arias · Facultad de Minas, UNAL Medellín">
+  <meta name="copyright" content="© 2026 Santiago Escobar Arias. Todos los derechos reservados.">
+  <meta property="article:author" content="Santiago Escobar Arias">
+  <meta property="og:site_name" content="Ingeniería Eléctrica · UNAL Medellín">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Portal Ingeniería Eléctrica - UNAL Medellín",
+    "author": {
+      "@type": "Person",
+      "name": "Santiago Escobar Arias",
+      "jobTitle": "Representante Estudiantil de Ingeniería de Sistemas",
+      "email": "saescobara@unal.edu.co",
+      "affiliation": {
+        "@type": "EducationalOrganization",
+        "name": "Universidad Nacional de Colombia · Facultad de Minas"
+      }
+    },
+    "copyrightHolder": {
+      "@type": "Person",
+      "name": "Santiago Escobar Arias"
+    },
+    "copyrightYear": "2026"
+  }
+  </script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ingeniería Eléctrica · UNAL Medellín</title>
+  <meta name="description" content="Portal oficial de Ingeniería Eléctrica de la Facultad de Minas, Universidad Nacional de Colombia Sede Medellín: información del programa, malla curricular interactiva (170 créditos), capítulos estudiantiles (IEEE PES, IAS, RAS), telemetría de sistemas de potencia, recursos de estudio y guía estudiantil.">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Graduate&family=Alfa+Slab+One&family=Space+Grotesk:wght@500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=JetBrains+Mono:wght@500;700&display=swap">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/inicio.css">
+</head>
+<body data-pagina="inicio">
+
+  <div id="barra"></div>
+
+  <!-- PORTADA / HERO LANDING: LABORATORIO DE ALTA TENSIÓN & BOBINA DE TESLA -->
+  <section class="hero-tesla" id="hero-tesla">
+    <div class="contenedor hero-tesla__layout">
+      <!-- 1. LOGO OFICIAL CON HALO DE RAYOS Y EFECTO BOBINA DE TESLA INTERACTIVA -->
+      <div class="hero-tesla__logo-escenario" id="logo-escenario-tesla">
+        <canvas id="canvas-logo-tesla" width="380" height="380" aria-label="Simulación física interactiva de halo de plasma y rayos de bobina de Tesla en el logo oficial"></canvas>
+        <div class="hero-tesla__logo-wrap">
+          <img class="hero-tesla__logo" id="logo-electrica-emisor" src="img/logo-electrica.png" alt="Logo oficial de Ingeniería Eléctrica · Facultad de Minas" width="130" height="130">
+        </div>
+      </div>
+
+      <!-- PISTA DE INTERACCIÓN CON EL LOGO -->
+      <p class="tesla-logo-pista">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="13" height="13" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        <span>Acerca tu cursor o desliza el dedo cerca del logo para atraer los rayos de plasma</span>
+      </p>
+
+      <!-- 2. RUTA MONOSPACE INSTITUCIONAL -->
+      <p class="hero-tesla__origen">// FACULTAD DE MINAS · UNIVERSIDAD NACIONAL DE COLOMBIA · SEDE MEDELLÍN</p>
+
+      <!-- 3. ANTETÍTULO DE CÓDIGO -->
+      <p class="hero-tesla__antetitulo">&lt; PREGRADO OFICIAL · ALTA TENSIÓN Y POTENCIA / &gt;</p>
+
+      <!-- 4. TÍTULO MONUMENTAL ESTILO SISTEMAS (VARSITY COLLEGIATE 3D) -->
+      <h1 class="hero-tesla__titulo">
+        <span class="letras-varsity letras-varsity--azul" data-texto="INGENIERÍA">INGENIERÍA</span>
+        <span class="letras-varsity letras-varsity--amarillo letras-varsity--sub" data-texto="ELÉCTRICA">ELÉCTRICA</span>
+      </h1>
+
+      <!-- 5. SUBTITULAR Y LEMA TÉCNICO -->
+      <p class="hero-tesla__lema">
+        Sistemas de Potencia · Alta Tensión · Redes Inteligentes (Smart Grids) · Transición Energética Sostenible
+      </p>
+
+      <!-- 6. PÍLDORAS TÉCNICAS RESPONSIVAS -->
+      <div class="hero-tesla__pistas" aria-label="Especialidades del programa">
+        <span class="pista-tag">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="13" height="13" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          <span>Generación &amp; Despacho 500 kV</span>
+        </span>
+        <span class="pista-tag">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="13" height="13" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><path d="M12 3v5M12 16v5M3 12h5M16 12h5"/></svg>
+          <span>Máquinas &amp; Subestaciones</span>
+        </span>
+        <span class="pista-tag">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="13" height="13" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M13 8l-3 4h4l-2 4"/></svg>
+          <span>Protecciones Digitales</span>
+        </span>
+      </div>
+
+      <!-- 7. TERMINAL DE CIFRAS CLAVE DEL PROGRAMA (ESTILO TERMINAL SISTEMAS) -->
+      <div class="hero-tesla__cifras-terminal">
+        <ul class="hero-tesla__conductor" id="portada-cifras" aria-label="Datos clave del programa"></ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECCIÓN INTERACTIVA: CENTRO DE CONTROL & FLUJO DE POTENCIA -->
+  <section class="seccion seccion--simulador" id="simulador-potencia" aria-labelledby="simulador-titulo">
+    <div class="contenedor">
+      <div class="seccion-titulo">
+        <p class="seccion-titulo__antetitulo">Visualizador Interactivo de Ingeniería Eléctrica</p>
+        <h2 id="simulador-titulo">Dinámica del Flujo de Potencia & Redes Inteligentes</h2>
+        <p class="seccion-titulo__intro">Interactúa con los diferentes regímenes del sistema interconectado y descubre cómo la ingeniería eléctrica transporta, protege y transforma la energía desde las grandes centrales hasta el usuario final.</p>
+      </div>
+
+      <div class="simulador-caja">
+        <!-- Selector de modos -->
+        <div class="simulador-tabs" role="tablist" aria-label="Modos operativos del sistema eléctrico">
+          <button type="button" class="simulador-tab is-activa" data-modo="generacion" role="tab" aria-selected="true">
+            1. Generación &amp; Despacho
+          </button>
+          <button type="button" class="simulador-tab" data-modo="transmision" role="tab" aria-selected="false">
+            2. Transmisión &amp; Líneas 500 kV
+          </button>
+          <button type="button" class="simulador-tab" data-modo="smartgrid" role="tab" aria-selected="false">
+            3. Smart Grids &amp; Renovables
+          </button>
+          <button type="button" class="simulador-tab" data-modo="protecciones" role="tab" aria-selected="false">
+            4. Protecciones &amp; Subestación Digital
+          </button>
+        </div>
+
+        <div class="simulador-grid">
+          <!-- Columna Izquierda: Diagrama Eléctrico Interactivo -->
+          <div class="simulador-visual" id="simulador-visual">
+            
+            <div class="red-nodo red-nodo--generacion">
+              <div class="red-nodo__icono-col">
+                <div class="red-nodo__emblema">
+                  <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.2">
+                    <circle cx="12" cy="12" r="9"/>
+                    <path d="M12 3a9 9 0 0 0 0 18v-9h9"/>
+                  </svg>
+                  <span class="red-nodo__corriente" id="sim-corriente-gen"></span>
+                </div>
+              </div>
+              <div class="red-nodo__info-col">
+                <span class="red-nodo__etiqueta">Centrales de Generación (Hidro, Térmica, Solar y Eólica)</span>
+                <span class="red-nodo__cota">13.8 kV · GENERACIÓN PRIMARIA SINCRONIZADA</span>
+              </div>
+            </div>
+
+            <div class="red-nodo red-nodo--elevador">
+              <div class="red-nodo__icono-col">
+                <div class="red-nodo__trafo-linea">
+                  <span class="red-nodo__trafo-bobina"></span>
+                  <span class="red-nodo__trafo-bobina"></span>
+                </div>
+              </div>
+              <div class="red-nodo__info-col">
+                <span class="red-nodo__etiqueta">Subestación Elevadora de Potencia (Transformador GSU)</span>
+                <span class="red-nodo__cota">13.8 kV a 230 kV / 500 kV · ELEVACIÓN DE TENSIÓN</span>
+              </div>
+            </div>
+
+            <div class="red-nodo red-nodo--transmision">
+              <div class="red-nodo__icono-col">
+                <div class="red-nodo__torre-linea">
+                  <svg viewBox="0 0 40 50" width="30" height="38" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20 2 L5 48 M20 2 L35 48 M10 16 L30 16 M6 30 L34 30 M15 16 L25 30 M25 16 L15 30"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="red-nodo__info-col">
+                <span class="red-nodo__etiqueta">Líneas de Extra Alta Tensión (Corredor Interconectado)</span>
+                <span class="red-nodo__cota">500 kV / 230 kV · MODELADO Π Y FLUJO DE POTENCIA</span>
+              </div>
+            </div>
+
+            <div class="red-nodo red-nodo--subestacion">
+              <div class="red-nodo__icono-col">
+                <div class="red-nodo__breaker" id="sim-breaker-visual"></div>
+              </div>
+              <div class="red-nodo__info-col">
+                <span class="red-nodo__etiqueta">Subestación de Maniobra &amp; Transformador Reductor</span>
+                <span class="red-nodo__cota">230 kV a 13.2 kV · MANIOBRA &amp; INTERRUPTORES SF6</span>
+              </div>
+            </div>
+
+            <div class="red-nodo red-nodo--distribucion">
+              <div class="red-nodo__icono-col">
+                <div class="red-nodo__dist-indicador"></div>
+              </div>
+              <div class="red-nodo__info-col">
+                <span class="red-nodo__etiqueta">Redes de Distribución &amp; Carga Final (Industrial y Residencial)</span>
+                <span class="red-nodo__cota">13.2 kV a 220V/127V · CONSUMO EFICIENTE &amp; SMART GRIDS</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Columna Derecha: Panel de Telemetría y Explicación Técnica -->
+          <div class="simulador-panel">
+            <div class="simulador-panel__badge" id="sim-badge">RÉGIMEN OPERATIVO 01 · DESPACHO ECONÓMICO</div>
+            <h3 class="simulador-panel__titulo" id="sim-titulo">Generación y Despacho Energético</h3>
+            <p class="simulador-panel__desc" id="sim-desc">
+              Las centrales sincrónicas y las fuentes renovables no convencionales (FNCER) entregan potencia al Sistema Interconectado Nacional. El control automático de generación (AGC) mantiene la frecuencia constante en 60.00 Hz respondiendo a la curva de demanda en tiempo real.
+            </p>
+
+            <div class="simulador-telemetria">
+              <div class="telemetria-card">
+                <span class="telemetria-card__label">Tensión Operativa</span>
+                <span class="telemetria-card__valor" id="sim-tension">230.0 kV</span>
+              </div>
+              <div class="telemetria-card">
+                <span class="telemetria-card__label">Frecuencia Nominal</span>
+                <span class="telemetria-card__valor" id="sim-frec">60.00 Hz</span>
+              </div>
+              <div class="telemetria-card">
+                <span class="telemetria-card__label">Potencia Despachada</span>
+                <span class="telemetria-card__valor" id="sim-potencia">1,280 MW</span>
+              </div>
+              <div class="telemetria-card">
+                <span class="telemetria-card__label">Tiempo de Respuesta</span>
+                <span class="telemetria-card__valor" id="sim-tiempo">&lt; 40 ms</span>
+              </div>
+            </div>
+
+            <div class="simulador-panel__materias">
+              <span class="materias-label">Materias clave relacionadas en la carrera:</span>
+              <div class="materias-pildoras" id="sim-materias">
+                <a href="malla.html" class="materia-chip">Sistemas de Generación de Energía</a>
+                <a href="malla.html" class="materia-chip">Máquinas Eléctricas I y II</a>
+                <a href="malla.html" class="materia-chip">Termodinámica General</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+
+    <!-- EL PROGRAMA: se carga al abrir la página -->
+    <section class="seccion programa" id="programa" aria-labelledby="programa-titulo">
+      <div class="contenedor" id="programa-contenido">
+        <p class="cargando">Cargando programa…</p>
+      </div>
+    </section>
+
+    <!-- PERFIL DEL EGRESADO: se carga cuando la persona se acerca -->
+    <section class="seccion perfil" id="perfil" aria-labelledby="perfil-titulo" data-carga="perfil">
+      <div class="contenedor" id="perfil-contenido">
+        <p class="cargando">Cargando perfil…</p>
+      </div>
+    </section>
+
+    <!-- GRUPOS ESTUDIANTILES Y CAPÍTULOS TÉCNICOS CON ESTILO BOMBILLA -->
+    <section class="grupos" id="grupos" aria-labelledby="grupos-titulo" data-carga="grupos">
+      <div class="contenedor" id="grupos-contenido">
+        <p class="cargando">Cargando capítulos…</p>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="pie"></div>
+
+  <script src="js/comun.js"></script>
+  <script src="js/inicio.js"></script>
+</body>
+</html>

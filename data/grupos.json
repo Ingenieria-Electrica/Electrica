@@ -1,0 +1,54 @@
+[
+  {
+    "id": "pes",
+    "nombre": "IEEE PES UNAL Medellín",
+    "sigla": "IEEE PES",
+    "subtitulo": "Power & Energy Society · Student Branch Chapter UNAL Medellín",
+    "logo": "img/grupo-ieee-pes.svg",
+    "tipo": "Capítulo Internacional de Potencia y Energía",
+    "color": "#E58E00",
+    "colorAcento": "#FFBB02",
+    "enlace": "https://www.instagram.com/ieeepesunalmed/",
+    "usuarioIg": "@ieeepesunalmed",
+    "descripcion": "Capítulo estudiantil líder enfocado en sistemas eléctricos de potencia, generación renovable, transmisión, distribución, mercados energéticos y redes inteligentes (Smart Grids). Promueve visitas técnicas a subestaciones, cursos especializados y participación en congresos internacionales de energía."
+  },
+  {
+    "id": "ias",
+    "nombre": "IEEE IAS UNAL Medellín",
+    "sigla": "IEEE IAS",
+    "subtitulo": "Industry Applications Society · Student Branch Chapter",
+    "logo": "img/grupo-ieee-ias.svg",
+    "tipo": "Capítulo de Aplicaciones Industriales",
+    "color": "#27AFC9",
+    "colorAcento": "#FFBB02",
+    "enlace": "https://www.instagram.com/ieee_ias_unalmed/",
+    "usuarioIg": "@ieee_ias_unalmed",
+    "descripcion": "Conecta la academia con el sector productivo industrial. Profundiza en el diseño y control de máquinas eléctricas, accionamientos de velocidad variable, electrónica de potencia, eficiencia energética y normativas de seguridad en instalaciones industriales y mineras."
+  },
+  {
+    "id": "ras",
+    "nombre": "IEEE RAS UNAL Medellín",
+    "sigla": "IEEE RAS",
+    "subtitulo": "Robotics and Automation Society · UNAL Medellín",
+    "logo": "img/grupo-ieee-ras.svg",
+    "tipo": "Capítulo de Robótica y Automatización",
+    "color": "#6D5C55",
+    "colorAcento": "#27AFC9",
+    "enlace": "https://www.instagram.com/ieee.ras.unalmed/",
+    "usuarioIg": "@ieee.ras.unalmed",
+    "descripcion": "Capítulo interdisciplinar dedicado al diseño y control de sistemas robóticos autónomos, sensórica avanzada, gemelos digitales, mecatrónica y automatización de procesos industriales e infraestructuras eléctricas inteligentes."
+  },
+  {
+    "id": "rama-ieee",
+    "nombre": "Rama Estudiantil IEEE UNAL Medellín",
+    "sigla": "IEEE UNAL",
+    "subtitulo": "Institute of Electrical and Electronics Engineers · Sede Medellín",
+    "logo": "img/grupo-ieee-unal.svg",
+    "tipo": "Rama Matriz Estudiantil",
+    "color": "#27AFC9",
+    "colorAcento": "#E58E00",
+    "enlace": "https://www.instagram.com/ieee_unalmed/",
+    "usuarioIg": "@ieee_unalmed",
+    "descripcion": "La rama estudiantil matriz que agrupa y articula los diferentes capítulos técnicos del IEEE en la Universidad Nacional de Colombia (Sede Medellín). Fomenta el liderazgo profesional, seminarios de divulgación científica, semilleros y redes de contacto con la industria global."
+  }
+]

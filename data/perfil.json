@@ -1,0 +1,27 @@
+{
+  "titulo": "Perfil del Ingeniero(a) Electricista Egresado",
+  "intro": "Un profesional forjado bajo el histórico lema de la Facultad de Minas: «Trabajo y Rectitud», con rigurosa fundamentación en ciencias exactas e ingeniería aplicada, visión prospectiva del sector energético, solvencia en tecnologías digitales y compromiso ético con el desarrollo sostenible del país.",
+  "rasgos": [
+    {
+      "icono": "potencia",
+      "titulo": "Planeación y Operación de Sistemas de Potencia",
+      "texto": "Analiza, proyecta y supervisa redes de transmisión y distribución eléctrica mediante simulación computacional de flujos de carga, cortocircuito y estabilidad, garantizando la calidad y continuidad del servicio de energía."
+    },
+    {
+      "icono": "maquinas",
+      "titulo": "Máquinas Eléctricas y Electrónica de Potencia",
+      "texto": "Modela, opera y ensaya generadores síncronos, transformadores de potencia, motores de inducción y convertidores electrónicos, optimizando el rendimiento energético en la industria e infraestructura nacional."
+    },
+    {
+      "icono": "protecciones",
+      "titulo": "Subestaciones Digitales y Protecciones Eléctricas",
+      "texto": "Diseña esquemas de protección por relés numéricos, coordinación de aislamiento y automatización de subestaciones (norma IEC 61850), respondiendo ante contingencias en fracciones de segundo."
+    },
+    {
+      "icono": "transicion",
+      "titulo": "Transición Energética y Redes Inteligentes (Smart Grids)",
+      "texto": "Lidera la integración a la red de fuentes no convencionales de energía renovable (FNCER solar y eólica), sistemas de baterías BESS, microrredes aisladas y esquemas de generación distribuida."
+    }
+  ],
+  "fuente": "Proyecto Educativo del Programa (PEP) de Ingeniería Eléctrica, Facultad de Minas, Universidad Nacional de Colombia Sede Medellín."
+}

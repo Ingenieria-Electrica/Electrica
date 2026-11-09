@@ -1,0 +1,1509 @@
+/**
+ * PLATAFORMA DIGITAL · INGENIERÍA ELÉCTRICA (UNAL MEDELLÍN)
+ * Diseño y Estilos por: Santiago Escobar Arias · Representante de Sistemas
+ * Colaborador: Kevin David Aristizabal Giraldo · Karistizabalg@unal.edu.co
+ * © 2026 Santiago Escobar Arias. Todos los derechos reservados.
+ * Obra protegida por la Ley 23 de 1982 y Decisión 351 (CAN).
+ */
+/* =========================================================
+   MÓDULO INICIO — INGENIERÍA ELÉCTRICA
+   1. Hero Landing: Laboratorio de Alta Tensión & Bobina de Tesla
+   2. Barra Conductora Curricular (Sin recuadro azul de Petróleos)
+   3. Simulador de Flujo de Potencia & Redes Inteligentes
+   4. El Programa (Ficha y Ejes Curriculares)
+   5. Perfil del Egresado
+   6. Capítulos Estudiantiles (Diseño Bombillas Incandescentes)
+   ========================================================= */
+
+
+/* =========================================================
+   1. HERO LANDING: LOGO TESLA RESONANTE (EFECTO BOBINA & RAYOS INTERACTIVOS)
+   - El logo oficial actúa como una bobina de Tesla / esfera de plasma
+   - Halo continuo de plasma con micro-arcos que irradian en 360 grados
+   - Rayo activo de alta tensión que salta directamente hacia el cursor o dedo
+   - Tipografía Varsity 3D doble contorno (Google Font Graduate)
+   - Terminal de cifras clave del programa
+   - 100% Responsive sin desbordamiento horizontal
+   ========================================================= */
+
+.hero-tesla {
+  position: relative;
+  background: radial-gradient(ellipse at 50% 25%, #2A211E 0%, #1A1413 55%, #100C0B 100%);
+  overflow-x: clip;
+  overflow-y: visible;
+  padding: 40px 0 48px;
+  border-bottom: 2px solid rgba(255, 187, 2, 0.35);
+}
+
+.hero-tesla::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: 
+    radial-gradient(rgba(0, 229, 255, 0.12) 1.2px, transparent 1.2px),
+    linear-gradient(90deg, rgba(255, 187, 2, 0.025) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(255, 187, 2, 0.025) 1px, transparent 1px);
+  background-size: 32px 32px, 32px 32px, 32px 32px;
+  pointer-events: none;
+  opacity: 0.65;
+}
+
+.hero-tesla__layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 16px;
+}
+
+/* 1. Logo Tesla Resonante Interactivo con Halo de Plasma y Rayos */
+.hero-tesla__logo-escenario {
+  position: relative;
+  width: clamp(280px, 78vw, 380px);
+  height: clamp(280px, 78vw, 380px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  user-select: none;
+  cursor: crosshair;
+}
+
+#canvas-logo-tesla {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hero-tesla__logo-wrap {
+  position: relative;
+  z-index: 2;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform .25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hero-tesla__logo-wrap:hover {
+  transform: scale(1.05);
+}
+
+.hero-tesla__logo {
+  width: clamp(102px, 24vw, 134px);
+  height: clamp(102px, 24vw, 134px);
+  border-radius: 50%;
+  object-fit: cover;
+  background: #1C1817;
+  border: 3.5px solid #FFFFFF;
+  box-shadow: 
+    0 0 0 3.5px #FFD000,
+    0 0 24px rgba(0, 229, 255, 0.55),
+    0 10px 28px rgba(0, 0, 0, 0.8);
+  display: block;
+}
+
+/* Pista de interacción con el logo tesla */
+.tesla-logo-pista {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-family: var(--letra-codigo);
+  font-size: clamp(10px, 1.8vw, 11.5px);
+  letter-spacing: .04em;
+  color: #B0A6A5;
+  background: rgba(32, 25, 23, 0.9);
+  padding: 5px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 229, 255, 0.35);
+  margin: -6px auto 18px;
+  backdrop-filter: blur(8px);
+  text-align: center;
+  user-select: none;
+}
+
+.tesla-logo-pista svg {
+  color: #FFD000;
+  filter: drop-shadow(0 0 6px rgba(255, 208, 0, 0.8));
+  flex-shrink: 0;
+}
+
+/* 2. Ruta Monospace y Antetítulo */
+.hero-tesla__origen {
+  font-family: var(--letra-codigo);
+  font-size: clamp(10.5px, 2.1vw, 13px);
+  letter-spacing: .08em;
+  color: #00E5FF;
+  margin: 0 0 8px;
+  opacity: 0.95;
+  text-transform: uppercase;
+  max-width: 100%;
+  word-break: break-word;
+}
+
+.hero-tesla__antetitulo {
+  font-family: var(--letra-codigo);
+  font-size: clamp(11.5px, 2.3vw, 14px);
+  font-weight: 700;
+  letter-spacing: clamp(.06em, 1.2vw, .14em);
+  color: #FFD000;
+  margin: 0 0 16px;
+  text-transform: uppercase;
+  max-width: 100%;
+  word-break: break-word;
+}
+
+/* 3. Tipografía Monumental Estilo Sistemas (Varsity 3D Double-Stroke) */
+.hero-tesla__titulo {
+  position: relative;
+  margin: 0 0 18px;
+  width: 100%;
+  text-align: center;
+}
+
+.letras-varsity {
+  position: relative;
+  display: inline-block;
+  isolation: isolate;
+  font-family: 'Graduate', Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(38px, 9.2vw, 98px);
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: .02em;
+  paint-order: stroke fill;
+}
+
+.letras-varsity--sub {
+  display: block;
+  margin-top: 10px;
+  font-size: clamp(34px, 8.8vw, 92px);
+  letter-spacing: .03em;
+}
+
+/* Línea 1: INGENIERÍA en Cian Eléctrico con Doble Contorno */
+.letras-varsity--azul {
+  color: #00E5FF;
+  -webkit-text-stroke: .07em #FFFFFF;
+  paint-order: stroke fill;
+}
+
+.letras-varsity--azul::before {
+  content: attr(data-texto);
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  color: #0A4355;
+  -webkit-text-stroke: .22em #052631;
+  paint-order: stroke fill;
+  filter: drop-shadow(0 0 22px rgba(0, 229, 255, 0.75)) drop-shadow(0 .06em 0 rgba(0, 0, 0, 0.85));
+}
+
+/* Línea 2: ELÉCTRICA en Volt Amarillo con Doble Contorno */
+.letras-varsity--amarillo {
+  color: #FFD000;
+  -webkit-text-stroke: .07em #FFFFFF;
+  paint-order: stroke fill;
+}
+
+.letras-varsity--amarillo::before {
+  content: attr(data-texto);
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  color: #7A4B00;
+  -webkit-text-stroke: .22em #422800;
+  paint-order: stroke fill;
+  filter: drop-shadow(0 0 22px rgba(255, 208, 0, 0.75)) drop-shadow(0 .06em 0 rgba(0, 0, 0, 0.85));
+}
+
+/* 4. Subtitular Técnico */
+.hero-tesla__lema {
+  font-family: var(--letra-universidad);
+  font-size: clamp(12.5px, 2vw, 15px);
+  font-weight: 600;
+  letter-spacing: .02em;
+  color: #ECE5E3;
+  line-height: 1.5;
+  margin: 0 auto 20px;
+  max-width: 680px;
+  padding: 0 12px;
+}
+
+/* 5. Pistas Técnicas de Especialidad */
+.hero-tesla__pistas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 24px;
+  max-width: 100%;
+}
+
+.pista-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(36, 29, 27, 0.88);
+  border: 1px solid rgba(0, 229, 255, 0.35);
+  color: #ECE5E3;
+  font-family: var(--letra-codigo);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .03em;
+  backdrop-filter: blur(8px);
+  transition: all .2s ease;
+  max-width: 100%;
+}
+
+.pista-tag svg {
+  color: #00E5FF;
+  flex-shrink: 0;
+}
+
+.pista-tag:hover {
+  border-color: #FFD000;
+  color: #FFF;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+}
+
+/* 7. TERMINAL DE CIFRAS CLAVE DEL PROGRAMA (ESTILO TERMINAL SISTEMAS) */
+.hero-tesla__cifras-terminal {
+  width: 100%;
+  max-width: 820px;
+  margin: 22px auto 0;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.hero-tesla__conductor {
+  list-style: none;
+  margin: 0;
+  padding: 24px 20px 18px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: rgba(18, 14, 13, 0.9);
+  border: 1px solid rgba(0, 229, 255, 0.45);
+  border-radius: 14px;
+  box-shadow: 
+    0 12px 36px rgba(0, 0, 0, 0.6),
+    0 0 24px rgba(0, 229, 255, 0.12);
+  backdrop-filter: blur(14px);
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* Tres puntos tipo macOS en la esquina superior izquierda del panel de cifras */
+.hero-tesla__conductor::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 14px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #FF5F56;
+  box-shadow: 14px 0 0 #FFBD2E, 28px 0 0 #27C93F;
+}
+
+.hero-tesla__cifra-nodo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 14px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.hero-tesla__cifra-nodo + .hero-tesla__cifra-nodo {
+  border-left: 1px dashed rgba(0, 229, 255, 0.35);
+}
+
+.hero-tesla__cifra-val {
+  font-family: var(--letra-codigo);
+  font-size: clamp(20px, 2.6vw, 28px);
+  font-weight: 800;
+  color: #FFD000;
+  line-height: 1.1;
+  text-shadow: 0 0 14px rgba(255, 208, 0, 0.5);
+}
+
+.hero-tesla__cifra-txt {
+  font-family: var(--letra-codigo);
+  font-size: clamp(10px, 1.2vw, 11.5px);
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: #B0A6A5;
+  margin-top: 4px;
+}
+
+
+/* =========================================================
+   3. SIMULADOR DE FLUJO DE POTENCIA & REDES INTELIGENTES
+   ========================================================= */
+
+.seccion--simulador {
+  background: #F4F0ED;
+  color: var(--tinta);
+  padding: 80px 0 92px;
+  position: relative;
+  border-bottom: 2px solid rgba(39, 175, 201, 0.25);
+}
+
+.seccion--simulador .seccion-titulo__antetitulo {
+  color: #0284C7;
+  font-weight: 800;
+}
+
+.seccion--simulador .seccion-titulo h2 {
+  color: var(--oscuro-profundo);
+}
+
+.seccion--simulador .seccion-titulo__intro {
+  color: var(--tinta-suave);
+}
+
+.simulador-caja {
+  background: #201A19;
+  border: 1.5px solid rgba(255, 187, 2, 0.3);
+  border-radius: 24px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.7), 0 0 30px rgba(229, 142, 0, 0.15);
+  overflow: hidden;
+  margin-top: 36px;
+}
+
+.simulador-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  background: #191413;
+  border-bottom: 1.5px solid rgba(255, 255, 255, 0.1);
+}
+
+.simulador-tab {
+  flex: 1 1 200px;
+  padding: 16px 20px;
+  background: transparent;
+  border: none;
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 3px solid transparent;
+  color: #A99F9D;
+  font-family: var(--letra-universidad);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-align: center;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+.simulador-tab:last-child {
+  border-right: none;
+}
+
+.simulador-tab:hover {
+  background: rgba(255, 255, 255, 0.04);
+  color: #FFF;
+}
+
+.simulador-tab.is-activa {
+  background: rgba(229, 142, 0, 0.12);
+  color: var(--volt-amarillo);
+  border-bottom-color: var(--volt-amarillo);
+  font-weight: 800;
+}
+
+.simulador-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  min-height: 480px;
+}
+
+/* Columna Izquierda: Diagrama Eléctrico */
+.simulador-visual {
+  background: #141010;
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  border-right: 1.5px solid rgba(255, 255, 255, 0.08);
+  justify-content: center;
+}
+
+.red-nodo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 16px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  transition: all .25s ease;
+  position: relative;
+}
+
+.red-nodo:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(39, 175, 201, 0.5);
+  transform: translateX(4px);
+}
+
+.red-nodo.is-activo {
+  background: rgba(229, 142, 0, 0.15);
+  border-color: var(--volt-amarillo);
+  box-shadow: 0 0 20px rgba(255, 187, 2, 0.25);
+  transform: translateX(6px);
+}
+
+.red-nodo__icono-col {
+  width: 52px;
+  height: 52px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1.5px solid rgba(255, 255, 255, 0.15);
+  color: var(--volt-amarillo);
+}
+
+.red-nodo.is-activo .red-nodo__icono-col {
+  background: var(--volt-amarillo);
+  color: #1C1817;
+  border-color: #FFF;
+  box-shadow: 0 0 16px var(--volt-amarillo);
+}
+
+.red-nodo__info-col {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  flex-grow: 1;
+}
+
+.red-nodo__etiqueta {
+  font-family: var(--letra-titulo);
+  font-size: 14px;
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 1.3;
+}
+
+.red-nodo__cota {
+  font-family: var(--letra-codigo);
+  font-size: 11px;
+  color: var(--cian-brillante);
+  letter-spacing: .04em;
+  font-weight: 600;
+}
+
+/* Columna Derecha: Panel de Telemetría y Explicación Técnica */
+.simulador-panel {
+  padding: 36px 32px;
+  display: flex;
+  flex-direction: column;
+  background: #1E1918;
+}
+
+.simulador-panel__badge {
+  display: inline-flex;
+  align-self: flex-start;
+  font-family: var(--letra-codigo);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: rgba(39, 175, 201, 0.15);
+  border: 1px solid rgba(39, 175, 201, 0.5);
+  color: var(--cian-brillante);
+  margin-bottom: 16px;
+}
+
+.simulador-panel__titulo {
+  font-family: var(--letra-titulo);
+  font-size: clamp(22px, 2.5vw, 28px);
+  font-weight: 800;
+  color: #FFFFFF;
+  margin: 0 0 14px;
+  line-height: 1.25;
+}
+
+.simulador-panel__desc {
+  font-size: 14.5px;
+  line-height: 1.65;
+  color: #CFC5C3;
+  margin-bottom: 24px;
+}
+
+.simulador-telemetria {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.telemetria-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.telemetria-card__label {
+  font-family: var(--letra-universidad);
+  font-size: 10.5px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--gris-metalico);
+}
+
+.telemetria-card__valor {
+  font-family: var(--letra-codigo);
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--volt-amarillo);
+}
+
+.simulador-panel__materias {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 20px;
+  margin-top: auto;
+}
+
+.materias-label {
+  display: block;
+  font-family: var(--letra-universidad);
+  font-size: 11.5px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--gris-metalico);
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.materias-pildoras {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.materia-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(229, 142, 0, 0.15);
+  border: 1px solid rgba(255, 187, 2, 0.4);
+  color: #FFF;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all .2s ease;
+}
+
+.materia-chip:hover {
+  background: var(--volt-amarillo);
+  color: #1C1817;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 187, 2, 0.35);
+}
+
+
+/* =========================================================
+   4. EL PROGRAMA (FICHA Y EJES CURRICULARES)
+   ========================================================= */
+
+.programa__rejilla {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.programa__texto {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 28px 30px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 14px 30px -20px rgba(30, 25, 24, .25);
+  font-size: 16px;
+  color: var(--tinta-suave);
+}
+
+.programa__lema {
+  display: inline-flex;
+  align-self: flex-start;
+  padding: 6px 16px;
+  border-radius: 999px;
+  background: var(--oscuro-profundo);
+  border: 1px solid var(--volt-amarillo);
+  font-family: var(--letra-universidad);
+  font-size: 12px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--volt-amarillo);
+  font-weight: 700;
+  line-height: 1.4;
+  max-width: 100%;
+}
+
+.ficha {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 14px 30px -20px rgba(30, 25, 24, .25);
+  overflow: hidden;
+}
+
+.ficha li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 13px 22px;
+}
+
+.ficha li:nth-child(odd) {
+  background: #F7F5F4;
+}
+
+.ficha__etiqueta {
+  font-family: var(--letra-universidad);
+  font-size: 12px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--gris);
+  flex-shrink: 0;
+}
+
+.ficha__valor {
+  text-align: right;
+  font-weight: 700;
+  color: var(--oscuro-profundo);
+  word-break: break-word;
+}
+
+.programa__parrafos {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  line-height: 1.65;
+}
+
+
+/* ---------- Ejes Curriculares / Rutas ---------- */
+
+.rutas-curriculares {
+  margin-top: 48px;
+  padding-top: 36px;
+  border-top: 1px solid rgba(30, 25, 24, 0.12);
+}
+
+.seccion-titulo--rutas {
+  margin-bottom: 28px;
+}
+
+.rutas__titulo {
+  font-family: var(--letra-titulo);
+  font-size: clamp(26px, 3.2vw, 36px);
+  color: var(--oscuro-profundo);
+  letter-spacing: -.02em;
+  margin: 4px 0 10px;
+}
+
+.rutas__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 22px;
+}
+
+.ruta-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 22px 20px;
+  background: #ffffff;
+  border-radius: 20px;
+  border: 1.5px solid rgba(30, 25, 24, 0.12);
+  box-shadow: 0 8px 24px -10px rgba(30, 25, 24, 0.08);
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+  overflow: hidden;
+}
+
+.ruta-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--color-ruta, var(--ambar-electrico));
+}
+
+.ruta-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px -12px rgba(30, 25, 24, 0.18);
+  border-color: var(--color-ruta, var(--ambar-electrico));
+}
+
+.ruta-card__encabezado {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.ruta-card__numero {
+  font-family: var(--letra-codigo);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  color: var(--color-ruta, var(--ambar-electrico));
+}
+
+.ruta-card__icono {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: rgba(30, 25, 24, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-ruta, var(--ambar-electrico));
+}
+
+.ruta-card__icono svg {
+  width: 22px;
+  height: 22px;
+}
+
+.ruta-card__nombre {
+  font-family: var(--letra-titulo);
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--oscuro-profundo);
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.ruta-card__descripcion {
+  font-size: 14px;
+  color: var(--tinta-suave);
+  line-height: 1.55;
+  margin-bottom: 16px;
+  flex-grow: 1;
+}
+
+.ruta-card__pie {
+  margin-top: auto;
+  padding-top: 12px;
+  border-top: 1px solid #EBE4E2;
+}
+
+.ruta-card__enlace {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--letra-universidad);
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--oscuro-profundo);
+  text-decoration: none;
+  transition: gap .15s, color .15s;
+}
+
+.ruta-card__enlace:hover {
+  gap: 10px;
+  color: var(--ambar-electrico);
+}
+
+
+/* ---------- Acreditación ---------- */
+
+.acreditacion {
+  margin-top: 48px;
+  padding: 36px 34px;
+  background: #ffffff;
+  border-radius: 24px;
+  border: 1.5px solid rgba(255, 187, 2, 0.4);
+  box-shadow: 0 16px 36px -12px rgba(30, 25, 24, 0.12);
+}
+
+.acreditacion__cabecera {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 28px;
+}
+
+.acreditacion__sello-icono {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: rgba(255, 187, 2, 0.15);
+  border: 2px solid var(--volt-amarillo);
+  color: var(--ambar-electrico);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.acreditacion__sello-icono svg {
+  width: 30px;
+  height: 30px;
+}
+
+.acreditacion__antetitulo {
+  font-family: var(--letra-universidad);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  color: var(--ambar-electrico);
+}
+
+.acreditacion__estado {
+  font-family: var(--letra-titulo);
+  font-size: clamp(20px, 2.5vw, 26px);
+  color: var(--oscuro-profundo);
+  font-weight: 700;
+}
+
+.acreditacion__rejilla {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+.acreditacion__tarjeta {
+  background: #FAF7F6;
+  border: 1px solid #E8E1DE;
+  border-radius: 16px;
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.acreditacion__tarjeta--renovacion {
+  border-left: 4px solid var(--volt-amarillo);
+  background: #FFFDF5;
+}
+
+.acreditacion__tarjeta-encabezado {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.acreditacion__anio-badge {
+  font-family: var(--letra-codigo);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--oscuro-profundo);
+  background: rgba(30, 25, 24, 0.08);
+  padding: 3px 8px;
+  border-radius: 6px;
+}
+
+.acreditacion__hito-tipo {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--ambar-electrico);
+  font-weight: 700;
+}
+
+.acreditacion__texto {
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: var(--tinta-suave);
+}
+
+.acreditacion__pie {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid #E8E1DE;
+  font-size: 13px;
+  color: var(--gris);
+}
+
+.acreditacion__info-icono {
+  width: 18px;
+  height: 18px;
+  color: var(--cian-electrico);
+  flex-shrink: 0;
+}
+
+.fuentes {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 13px;
+  color: var(--gris);
+}
+
+.fuentes a {
+  color: var(--ambar-electrico);
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   5. PERFIL DEL EGRESADO
+   ========================================================= */
+
+.perfil {
+  background: #EFEAE8;
+}
+
+.perfil__tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.rasgo {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 26px 24px;
+  border-radius: 20px;
+  background: #fff;
+  border-top: 5px solid var(--ambar-electrico);
+  box-shadow: 0 14px 30px -20px rgba(30, 25, 24, .2);
+  transition: transform .2s ease;
+}
+
+.rasgo:hover {
+  transform: translateY(-3px);
+}
+
+.rasgo:nth-child(2) { border-top-color: var(--volt-amarillo); }
+.rasgo:nth-child(3) { border-top-color: var(--cian-electrico); }
+.rasgo:nth-child(4) { border-top-color: var(--verde-minas); }
+
+.rasgo__icono {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: var(--oscuro-profundo);
+  color: var(--volt-amarillo);
+}
+
+.rasgo:nth-child(2) .rasgo__icono {
+  background: #27201E;
+  color: var(--volt-amarillo);
+}
+
+.rasgo:nth-child(3) .rasgo__icono {
+  background: #152A33;
+  color: var(--cian-brillante);
+}
+
+.rasgo:nth-child(4) .rasgo__icono {
+  background: #003319;
+  color: #70E2A0;
+}
+
+.rasgo__icono svg {
+  width: 26px;
+  height: 26px;
+}
+
+.rasgo h3 {
+  font-family: var(--letra-titulo);
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--oscuro-profundo);
+  line-height: 1.3;
+}
+
+.rasgo p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--tinta-suave);
+}
+
+.perfil__fuente {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 13px;
+  color: var(--gris);
+}
+
+
+/* =========================================================
+   6. CAPÍTULOS ESTUDIANTILES: DISEÑO BOMBILLAS INCANDESCENTES
+   ========================================================= */
+
+.grupos {
+  padding: 84px 0 100px;
+  background: radial-gradient(circle at 50% 12%, #2C2422 0%, #1A1514 55%, #100C0C 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.grupos::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent 0%, var(--volt-amarillo) 50%, transparent 100%);
+  opacity: 0.6;
+}
+
+.grupos .seccion-titulo__antetitulo {
+  color: var(--volt-amarillo);
+}
+
+.grupos .seccion-titulo h2 {
+  color: #FFFFFF;
+}
+
+.grupos .seccion-titulo__intro {
+  color: #D6CECC;
+}
+
+.grupos__grid-bombillas {
+  list-style: none;
+  max-width: 1100px;
+  margin: 36px auto 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 32px 24px;
+}
+
+.tarjeta-bombilla {
+  background: rgba(36, 29, 28, 0.7);
+  border: 1.5px solid rgba(255, 187, 2, 0.25);
+  border-radius: 28px;
+  padding: 28px 22px 22px;
+  backdrop-filter: blur(12px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  transition: transform .3s ease, border-color .3s ease, box-shadow .3s ease;
+  overflow: visible;
+}
+
+.tarjeta-bombilla:hover {
+  transform: translateY(-8px);
+  border-color: var(--color-capitulo-acento, var(--volt-amarillo));
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.75), 0 0 35px var(--color-capitulo, rgba(39, 175, 201, 0.3));
+}
+
+/* Envoltorio de la Bombilla */
+.bombilla-socket-wrap {
+  position: relative;
+  width: 140px;
+  height: 175px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.bombilla-lampara {
+  position: relative;
+  width: 120px;
+  height: 165px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Halo de Resplandor Electromagnético */
+.bombilla-glow {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--color-capitulo, rgba(255, 187, 2, 0.6)) 0%, transparent 72%);
+  opacity: 0.35;
+  filter: blur(12px);
+  pointer-events: none;
+  transition: opacity .3s ease, transform .3s ease;
+  animation: pulsoBombilla 3.5s ease-in-out infinite alternate;
+}
+
+.tarjeta-bombilla:hover .bombilla-glow {
+  opacity: 0.85;
+  transform: translateX(-50%) scale(1.25);
+  filter: blur(16px);
+}
+
+@keyframes pulsoBombilla {
+  0% { transform: translateX(-50%) scale(0.95); opacity: 0.3; }
+  100% { transform: translateX(-50%) scale(1.1); opacity: 0.55; }
+}
+
+/* Filamento Incandescente Interior */
+.bombilla-filamento {
+  position: absolute;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 64px;
+  height: 64px;
+  pointer-events: none;
+  z-index: 1;
+  color: var(--volt-amarillo);
+  opacity: 0.75;
+  transition: all .3s ease;
+  filter: drop-shadow(0 0 4px var(--volt-amarillo));
+}
+
+.tarjeta-bombilla:hover .bombilla-filamento {
+  opacity: 1;
+  color: #FFF;
+  filter: drop-shadow(0 0 8px var(--volt-amarillo)) drop-shadow(0 0 14px #FFF);
+}
+
+.bombilla-filamento-svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Globo de Cristal */
+.bombilla-globo {
+  position: relative;
+  width: 110px;
+  height: 110px;
+  border-radius: 50% 50% 42% 42% / 55% 55% 45% 45%;
+  background: radial-gradient(circle at 35% 30%, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0.04) 50%, rgba(20, 16, 15, 0.45) 100%);
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  box-shadow: inset 0 0 16px rgba(255, 255, 255, 0.15), 0 8px 24px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 2;
+  transition: all .3s ease;
+  overflow: hidden;
+}
+
+.tarjeta-bombilla:hover .bombilla-globo {
+  border-color: #FFF;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.4), 0 0 24px var(--color-capitulo-acento, var(--volt-amarillo));
+  transform: scale(1.04);
+}
+
+.bombilla-reflejo {
+  position: absolute;
+  top: 8px;
+  left: 14px;
+  width: 24px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.6) 0%, transparent 80%);
+  transform: rotate(-30deg);
+  pointer-events: none;
+  z-index: 4;
+}
+
+.bombilla-emblema {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  padding: 4px;
+  transition: transform .25s ease;
+}
+
+.tarjeta-bombilla:hover .bombilla-emblema {
+  transform: scale(1.08);
+}
+
+.bombilla-emblema-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.6));
+}
+
+.bombilla-badge-ig {
+  position: absolute;
+  bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  opacity: 0;
+  background: var(--volt-amarillo);
+  color: #1C1817;
+  font-family: var(--letra-codigo);
+  font-size: 10px;
+  font-weight: 800;
+  padding: 2px 8px;
+  border-radius: 999px;
+  white-space: nowrap;
+  pointer-events: none;
+  transition: all .2s ease;
+  z-index: 5;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.tarjeta-bombilla:hover .bombilla-badge-ig {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Rosca Metálica Edison E27 */
+.bombilla-rosca {
+  position: relative;
+  width: 44px;
+  height: 34px;
+  margin-top: -4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+
+.rosca-aro {
+  width: 100%;
+  height: 7px;
+  margin-bottom: 2px;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #6E5C4E 0%, #B89B7B 40%, #E2CFB8 50%, #9C826A 70%, #524235 100%);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.4), 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.rosca-pie {
+  width: 22px;
+  height: 6px;
+  border-radius: 0 0 8px 8px;
+  background: #25201F;
+  border: 1px solid #14100F;
+  box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.2);
+}
+
+/* Información de la Tarjeta */
+.tarjeta-bombilla__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.tarjeta-bombilla__tipo {
+  font-family: var(--letra-universidad);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--color-capitulo-acento, var(--volt-amarillo));
+  margin-bottom: 4px;
+}
+
+.tarjeta-bombilla__nombre {
+  font-family: var(--letra-titulo);
+  font-size: 19px;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin: 0 0 2px;
+  line-height: 1.25;
+}
+
+.tarjeta-bombilla__subtitulo {
+  font-size: 12px;
+  color: #B0A6A5;
+  margin: 0 0 10px;
+}
+
+.tarjeta-bombilla__desc {
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: #D6CECC;
+  margin: 0 0 16px;
+  flex-grow: 1;
+}
+
+.tarjeta-bombilla__pie {
+  margin-top: auto;
+  width: 100%;
+}
+
+.tarjeta-bombilla__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 187, 2, 0.35);
+  color: #FFF;
+  font-family: var(--letra-universidad);
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all .2s ease;
+  letter-spacing: .02em;
+}
+
+.tarjeta-bombilla__btn:hover {
+  background: var(--volt-amarillo);
+  color: #1C1817;
+  border-color: #FFF;
+  box-shadow: 0 0 16px rgba(255, 187, 2, 0.4);
+}
+
+
+/* =========================================================
+   RESPONSIVE DESIGN
+   ========================================================= */
+
+@media (max-width: 980px) {
+  .hero-tesla {
+    padding: 34px 0 36px;
+  }
+  .hero-tesla__cifras-terminal {
+    max-width: 100%;
+  }
+  .hero-tesla__conductor {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 24px 14px 14px;
+    gap: 8px;
+  }
+  .hero-tesla__cifra-nodo:nth-child(2) {
+    border-right: none;
+  }
+  .hero-tesla__cifra-nodo:nth-child(n+3) {
+    border-top: 1px dashed rgba(0, 229, 255, 0.25);
+  }
+  .simulador-grid {
+    grid-template-columns: 1fr;
+  }
+  .simulador-visual {
+    border-right: none;
+    border-bottom: 1.5px solid rgba(255, 255, 255, 0.08);
+  }
+  .programa__rejilla {
+    grid-template-columns: 1fr;
+  }
+  .grupos__grid-bombillas {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-tesla {
+    padding: 24px 0 28px;
+  }
+  .hero-tesla__logo-escenario {
+    width: clamp(260px, 86vw, 320px);
+    height: clamp(260px, 86vw, 320px);
+  }
+  .tesla-logo-pista {
+    font-size: 10px;
+    padding: 4px 12px;
+    margin-bottom: 14px;
+  }
+  .hero-tesla__origen {
+    font-size: 9.5px;
+    letter-spacing: .04em;
+  }
+  .hero-tesla__antetitulo {
+    font-size: 10.5px;
+    letter-spacing: .05em;
+    margin-bottom: 10px;
+  }
+  .hero-tesla__lema {
+    font-size: 12px;
+    padding: 0 4px;
+    margin-bottom: 14px;
+  }
+  .hero-tesla__pistas {
+    gap: 6px;
+    margin-bottom: 16px;
+  }
+  .pista-tag {
+    font-size: 10px;
+    padding: 4px 10px;
+  }
+  .hero-tesla__cifras-terminal {
+    margin-top: 14px;
+  }
+  .hero-tesla__conductor {
+    grid-template-columns: 1fr;
+    padding: 26px 12px 10px;
+  }
+  .hero-tesla__cifra-nodo {
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom: 1px dashed rgba(0, 229, 255, 0.2);
+    padding: 6px 0;
+  }
+  .hero-tesla__cifra-nodo:last-child {
+    border-bottom: none;
+  }
+  .simulador-telemetria {
+    grid-template-columns: 1fr;
+  }
+  .simulador-tabs {
+    flex-direction: column;
+  }
+  .simulador-tab {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    text-align: left;
+    padding: 12px 16px;
+  }
+  .grupos__grid-bombillas {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero-tesla__logo-escenario {
+    width: 250px;
+    height: 250px;
+  }
+}

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160">
+  <defs>
+    <linearGradient id="ieeeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#27AFC9"/>
+      <stop offset="100%" stop-color="#FFBB02"/>
+    </linearGradient>
+    <radialGradient id="ieeeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#27AFC9" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#1C1817" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <circle cx="80" cy="80" r="76" fill="#181B1E" stroke="url(#ieeeGrad)" stroke-width="4"/>
+  <circle cx="80" cy="80" r="66" fill="url(#ieeeGlow)"/>
+  <!-- IEEE Official Kite / Diamond & Compass Arrows -->
+  <polygon points="80,26 112,80 80,134 48,80" fill="none" stroke="#27AFC9" stroke-width="3"/>
+  <path d="M80 34 L80 126" stroke="#FFBB02" stroke-width="3"/>
+  <path d="M56 80 L104 80" stroke="#FFBB02" stroke-width="3"/>
+  <!-- Right Hand Rule / Magnetism Circle Arrows -->
+  <path d="M72 68 A12 12 0 1 1 88 92" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="88,96 88,88 94,92" fill="#FFFFFF"/>
+  <text x="80" y="132" font-family="'Space Grotesk', sans-serif" font-size="15" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">RAMA IEEE</text>
+  <text x="80" y="145" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" font-weight="600" fill="#27AFC9" text-anchor="middle" letter-spacing="1">UNAL MEDELLÍN</text>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160">
+  <defs>
+    <linearGradient id="rasGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E58E00"/>
+      <stop offset="100%" stop-color="#27AFC9"/>
+    </linearGradient>
+    <radialGradient id="rasGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#27AFC9" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#6D5C55" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <circle cx="80" cy="80" r="76" fill="#1C1817" stroke="url(#rasGrad)" stroke-width="4"/>
+  <circle cx="80" cy="80" r="66" fill="url(#rasGlow)"/>
+  <!-- Robot Arm / Automation Nodes -->
+  <circle cx="56" cy="82" r="7" fill="#FFBB02"/>
+  <circle cx="80" cy="58" r="8" fill="#27AFC9"/>
+  <circle cx="104" cy="82" r="7" fill="#FFBB02"/>
+  <line x1="56" y1="82" x2="80" y2="58" stroke="#FFFFFF" stroke-width="3"/>
+  <line x1="80" y1="58" x2="104" y2="82" stroke="#FFFFFF" stroke-width="3"/>
+  <!-- Gripper / Sensor -->
+  <path d="M72 96 L80 104 L88 96" fill="none" stroke="#27AFC9" stroke-width="3.5" stroke-linecap="round"/>
+  <line x1="80" y1="58" x2="80" y2="98" stroke="#27AFC9" stroke-width="2.5" stroke-dasharray="3,3"/>
+  <text x="80" y="132" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">IEEE RAS</text>
+  <text x="80" y="145" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" font-weight="600" fill="#FFBB02" text-anchor="middle" letter-spacing="1">ROBOTICS &amp; AUTOMATION</text>
+</svg>

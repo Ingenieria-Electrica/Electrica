@@ -1,0 +1,832 @@
+[
+  {
+    "codigo": "1000004-M",
+    "nombre": "Cálculo Diferencial",
+    "creditos": 4,
+    "obligatoria": true,
+    "agrupacion": "matematicas-probabilidad-estadistica",
+    "semestre": 1,
+    "prerrequisitos": [],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "1000008-M",
+    "nombre": "Geometría Vectorial y Analítica",
+    "creditos": 4,
+    "obligatoria": true,
+    "agrupacion": "matematicas-probabilidad-estadistica",
+    "semestre": 1,
+    "prerrequisitos": [],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3009531",
+    "nombre": "Introducción a la Ingeniería Eléctrica",
+    "creditos": 2,
+    "obligatoria": true,
+    "agrupacion": "basicas-disciplinares",
+    "semestre": 1,
+    "prerrequisitos": [],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "1000005-M",
+    "nombre": "Cálculo Integral",
+    "creditos": 4,
+    "obligatoria": true,
+    "agrupacion": "matematicas-probabilidad-estadistica",
+    "semestre": 2,
+    "prerrequisitos": ["1000004-M"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "1000003-M",
+    "nombre": "Álgebra Lineal",
+    "creditos": 4,
+    "obligatoria": true,
+    "agrupacion": "matematicas-probabilidad-estadistica",
+    "semestre": 2,
+    "prerrequisitos": ["1000008-M"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "1000019-M",
+    "nombre": "Física Mecánica",
+    "creditos": 4,
+    "obligatoria": true,
+    "agrupacion": "fisica",
+    "semestre": 2,
+    "prerrequisitos": ["1000004-M", "1000008-M"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010481",
+    "nombre": "Análisis de Circuitos Eléctricos I",
+    "creditos": 3,
+    "obligatoria": true,
+    "agrupacion": "sistemas-energia-electrica",
+    "semestre": 2,
+    "prerrequisitos": ["1000004-M"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "1000006-M",
+    "nombre": "Cálculo en Varias Variables",
+    "creditos": 4,
+    "obligatoria": true,
+    "agrupacion": "matematicas-probabilidad-estadistica",
+    "semestre": 3,
+    "prerrequisitos": ["1000005-M"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "1000007-M",
+    "nombre": "Ecuaciones Diferenciales",
+    "creditos": 4,
+    "obligatoria": true,
+    "agrupacion": "matematicas-probabilidad-estadistica",
+    "semestre": 3,
+    "prerrequisitos": ["1000005-M", "1000003-M"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "1000017-M",
+    "nombre": "Física de Electricidad y Magnetismo",
+    "creditos": 4,
+    "obligatoria": true,
+    "agrupacion": "fisica",
+    "semestre": 3,
+    "prerrequisitos": ["1000019-M", "1000005-M"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010435",
+    "nombre": "Fundamentos de Programación",
+    "creditos": 3,
+    "obligatoria": true,
+    "agrupacion": "herramientas-informaticas-metodos-numericos",
+    "semestre": 3,
+    "prerrequisitos": [],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010478",
+    "nombre": "Termodinámica General",
+    "creditos": 3,
+    "obligatoria": true,
+    "agrupacion": "basicas-disciplinares",
+    "semestre": 3,
+    "prerrequisitos": ["1000019-M"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010651",
+    "nombre": "Estadística I",
+    "creditos": 3,
+    "obligatoria": true,
+    "agrupacion": "matematicas-probabilidad-estadistica",
+    "semestre": 4,
+    "prerrequisitos": ["1000005-M"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3006905",
+    "nombre": "Matemáticas Especiales",
+    "creditos": 4,
+    "obligatoria": true,
+    "agrupacion": "matematicas-probabilidad-estadistica",
+    "semestre": 4,
+    "prerrequisitos": ["1000007-M"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3006907",
+    "nombre": "Métodos Numéricos",
+    "creditos": 4,
+    "obligatoria": true,
+    "agrupacion": "herramientas-informaticas-metodos-numericos",
+    "semestre": 4,
+    "prerrequisitos": ["1000005-M", "1000003-M"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010496",
+    "nombre": "Análisis de Circuitos Eléctricos II",
+    "creditos": 3,
+    "obligatoria": true,
+    "agrupacion": "sistemas-energia-electrica",
+    "semestre": 4,
+    "prerrequisitos": ["3010481", "1000007-M"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3007756",
+    "nombre": "Laboratorio de Circuitos",
+    "creditos": 1,
+    "obligatoria": true,
+    "agrupacion": "sistemas-energia-electrica",
+    "semestre": 4,
+    "prerrequisitos": ["3010496"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010408",
+    "nombre": "Fundamentos de Proyectos en Ingeniería",
+    "creditos": 3,
+    "obligatoria": true,
+    "agrupacion": "proyectos-ingenieria",
+    "semestre": 4,
+    "prerrequisitos": [],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010421",
+    "nombre": "Señales y Sistemas Lineales",
+    "creditos": 3,
+    "obligatoria": true,
+    "agrupacion": "automatizacion-control-instrumentacion",
+    "semestre": 5,
+    "prerrequisitos": ["3006905"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010520",
+    "nombre": "Teoría Electromagnética",
+    "creditos": 3,
+    "obligatoria": true,
+    "agrupacion": "sistemas-energia-electrica",
+    "semestre": 5,
+    "prerrequisitos": ["1000017-M"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010458",
+    "nombre": "Electrónica Análoga I",
+    "creditos": 3,
+    "obligatoria": true,
+    "agrupacion": "electronica-comunicaciones",
+    "semestre": 5,
+    "prerrequisitos": ["3010496", "3007756"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010490",
+    "nombre": "Modelado de Líneas de Transmisión",
+    "creditos": 3,
+    "obligatoria": true,
+    "agrupacion": "sistemas-energia-electrica",
+    "semestre": 6,
+    "prerrequisitos": ["1000006-M", "3006905", "3010520"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010402",
+    "nombre": "Control: Entrada - Salida",
+    "creditos": 3,
+    "obligatoria": true,
+    "agrupacion": "automatizacion-control-instrumentacion",
+    "semestre": 6,
+    "prerrequisitos": ["3010421"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010661",
+    "nombre": "Máquinas Eléctricas I",
+    "creditos": 3,
+    "obligatoria": true,
+    "agrupacion": "sistemas-energia-electrica",
+    "semestre": 6,
+    "prerrequisitos": ["3010520"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010457",
+    "nombre": "Electrónica Análoga II",
+    "creditos": 3,
+    "obligatoria": true,
+    "agrupacion": "electronica-comunicaciones",
+    "semestre": 6,
+    "prerrequisitos": ["3010458"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010483",
+    "nombre": "Electrónica Digital",
+    "creditos": 3,
+    "obligatoria": true,
+    "agrupacion": "electronica-comunicaciones",
+    "semestre": 6,
+    "prerrequisitos": ["3010458"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010407",
+    "nombre": "Estructuración y Evaluación de Proyectos de Ingeniería",
+    "creditos": 3,
+    "obligatoria": true,
+    "agrupacion": "proyectos-ingenieria",
+    "semestre": 6,
+    "prerrequisitos": ["3010408"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010658",
+    "nombre": "Instalaciones Eléctricas Industriales y Residenciales",
+    "creditos": 3,
+    "obligatoria": true,
+    "agrupacion": "sistemas-energia-electrica",
+    "semestre": 7,
+    "prerrequisitos": ["3010661", "3010490"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010662",
+    "nombre": "Máquinas Eléctricas II",
+    "creditos": 3,
+    "obligatoria": true,
+    "agrupacion": "sistemas-energia-electrica",
+    "semestre": 7,
+    "prerrequisitos": ["3010661"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010494",
+    "nombre": "Telecomunicaciones",
+    "creditos": 3,
+    "obligatoria": true,
+    "agrupacion": "electronica-comunicaciones",
+    "semestre": 7,
+    "prerrequisitos": ["3010421", "3010483"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010538",
+    "nombre": "Laboratorio de Máquinas Eléctricas",
+    "creditos": 2,
+    "obligatoria": true,
+    "agrupacion": "sistemas-energia-electrica",
+    "semestre": 8,
+    "prerrequisitos": ["3010662"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010529",
+    "nombre": "Sistemas de Generación de Energía Eléctrica",
+    "creditos": 3,
+    "obligatoria": true,
+    "agrupacion": "sistemas-energia-electrica",
+    "semestre": 8,
+    "prerrequisitos": ["3010662", "3010478"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010497",
+    "nombre": "Análisis de Sistemas de Potencia",
+    "creditos": 3,
+    "obligatoria": true,
+    "agrupacion": "sistemas-energia-electrica",
+    "semestre": 8,
+    "prerrequisitos": ["3010662", "3010490"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010398",
+    "nombre": "Automatización de Sistemas Eléctricos",
+    "creditos": 3,
+    "obligatoria": true,
+    "agrupacion": "automatizacion-control-instrumentacion",
+    "semestre": 8,
+    "prerrequisitos": ["3010483", "3010538"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010439",
+    "nombre": "Proyecto Integrado de Ingeniería",
+    "creditos": 4,
+    "obligatoria": true,
+    "agrupacion": "proyectos-ingenieria",
+    "semestre": 8,
+    "prerrequisitos": ["3010407"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010482",
+    "nombre": "Diseño de Redes de Transmisión y Distribución",
+    "creditos": 3,
+    "obligatoria": true,
+    "agrupacion": "sistemas-energia-electrica",
+    "semestre": 9,
+    "prerrequisitos": ["3010497"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010492",
+    "nombre": "Sistemas de Protecciones Eléctricas",
+    "creditos": 3,
+    "obligatoria": true,
+    "agrupacion": "sistemas-energia-electrica",
+    "semestre": 9,
+    "prerrequisitos": ["3010497"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3007424",
+    "nombre": "Trabajo de Grado",
+    "creditos": 6,
+    "obligatoria": true,
+    "agrupacion": "trabajo-grado",
+    "semestre": 10,
+    "prerrequisitos": ["3010439"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3006906",
+    "nombre": "Matemáticas Discretas",
+    "creditos": 4,
+    "obligatoria": false,
+    "agrupacion": "optativas-fundamentacion",
+    "semestre": 5,
+    "prerrequisitos": ["1000004-M"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3006915",
+    "nombre": "Estadística II",
+    "creditos": 4,
+    "obligatoria": false,
+    "agrupacion": "optativas-fundamentacion",
+    "semestre": 5,
+    "prerrequisitos": ["3010651"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "1000020-M",
+    "nombre": "Física de Oscilaciones, Ondas y Óptica",
+    "creditos": 4,
+    "obligatoria": false,
+    "agrupacion": "optativas-fundamentacion",
+    "semestre": 5,
+    "prerrequisitos": ["1000017-M", "1000007-M"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3006829",
+    "nombre": "Química General",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "optativas-fundamentacion",
+    "semestre": 5,
+    "prerrequisitos": [],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3011012",
+    "nombre": "Ecología General",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "optativas-fundamentacion",
+    "semestre": 5,
+    "prerrequisitos": ["3010651"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3007760",
+    "nombre": "Normatividad en Ingeniería Eléctrica",
+    "creditos": 2,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 7,
+    "prerrequisitos": ["3010490"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010480",
+    "nombre": "Alta Tensión",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 7,
+    "prerrequisitos": ["3010490"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3007592",
+    "nombre": "Fenómenos Transitorios Electromagnéticos",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 7,
+    "prerrequisitos": ["3010490"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3008706",
+    "nombre": "Sistemas de Puesta A Tierra",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 7,
+    "prerrequisitos": ["3010490"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3007590",
+    "nombre": "Coordinación de Aislamiento Eléctrico I",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 7,
+    "prerrequisitos": ["3010490"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3007591",
+    "nombre": "Coordinación de Aislamiento Eléctrico II",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 9,
+    "prerrequisitos": ["3007590"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3007765",
+    "nombre": "Subestaciones Eléctricas",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 7,
+    "prerrequisitos": ["3010490"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010495",
+    "nombre": "Análisis de Mercados de Energía Eléctrica",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 9,
+    "prerrequisitos": ["3010497"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010675",
+    "nombre": "Fundamentos de Calidad de la Potencia",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 9,
+    "prerrequisitos": ["3010497"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010489",
+    "nombre": "Modelado de Sistemas Fotovoltaicos",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 7,
+    "prerrequisitos": ["3010457"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3011061",
+    "nombre": "Tópicos de la Digitalización de la Energía",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 9,
+    "prerrequisitos": ["3010497", "3010494"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3011320",
+    "nombre": "Análisis Moderno de Máquinas Eléctricas y sus Accionamientos",
+    "creditos": 4,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 9,
+    "prerrequisitos": ["3010538", "3010662"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3011286",
+    "nombre": "Ensayos sobre Máquinas Eléctricas Rotativas",
+    "creditos": 4,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 9,
+    "prerrequisitos": ["3010538"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010539",
+    "nombre": "Procesamiento de Señales",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 7,
+    "prerrequisitos": ["3010421"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010484",
+    "nombre": "Fundamentos de Electrónica de Potencia",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 7,
+    "prerrequisitos": ["3010457", "3010402"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010491",
+    "nombre": "Procesadores",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 7,
+    "prerrequisitos": ["3010483", "3010435"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010493",
+    "nombre": "Sistemas en Tiempo Real",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 9,
+    "prerrequisitos": ["3010491"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010532",
+    "nombre": "Comunicaciones Digitales",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 9,
+    "prerrequisitos": ["3010494"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3006876",
+    "nombre": "Taller V (Electrónica Digital y Microcontroladores)",
+    "creditos": 5,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 7,
+    "prerrequisitos": ["3010458", "3010435"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3009671",
+    "nombre": "Comunicaciones Inalámbricas y Redes de Sensores",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 9,
+    "prerrequisitos": ["3010491", "3010494"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3006844",
+    "nombre": "Fundamentos de Fibras Ópticas",
+    "creditos": 4,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 7,
+    "prerrequisitos": ["1000020-M", "3010458"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3011321",
+    "nombre": "Procesamiento Inteligente de Señales",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 9,
+    "prerrequisitos": ["3010539"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010413",
+    "nombre": "Instrumentación y Medidas",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 7,
+    "prerrequisitos": ["3010458"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010505",
+    "nombre": "Automatización de Procesos",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 7,
+    "prerrequisitos": ["3010458"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010506",
+    "nombre": "Automatización Integrada",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 9,
+    "prerrequisitos": ["3010483", "3010505"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3007595",
+    "nombre": "Redes Teleinformáticas I",
+    "creditos": 4,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 7,
+    "prerrequisitos": [],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3011054",
+    "nombre": "Controles Asociados a Sistemas de Generación",
+    "creditos": 4,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 9,
+    "prerrequisitos": ["3010402", "3010662"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3006960",
+    "nombre": "Mecánica de Fluidos",
+    "creditos": 4,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 7,
+    "prerrequisitos": ["1000007-M", "1000019-M"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010436",
+    "nombre": "Gestión del Mantenimiento",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 9,
+    "prerrequisitos": ["3010651"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3007853",
+    "nombre": "Ingeniería de Software",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 7,
+    "prerrequisitos": ["3007744"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3007744",
+    "nombre": "Programación Orientada a Objetos",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 7,
+    "prerrequisitos": ["3010435"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3007741",
+    "nombre": "Estructura de Datos",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 7,
+    "prerrequisitos": ["3007744"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3007847",
+    "nombre": "Bases de Datos I",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 9,
+    "prerrequisitos": ["3007741"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010674",
+    "nombre": "Estrategias de Gestión y Gerencia de Proyectos en Ingeniería",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 9,
+    "prerrequisitos": ["3010407"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010537",
+    "nombre": "Gestión de Proyectos de Desarrollo y Metodología General Ajustada",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 9,
+    "prerrequisitos": ["3010407"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010668",
+    "nombre": "Proyectos de Innovación y Desarrollo",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 9,
+    "prerrequisitos": ["3010407"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010669",
+    "nombre": "Toma de Decisión para el Diseño en Ingeniería",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 9,
+    "prerrequisitos": ["3010407"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010535",
+    "nombre": "Fundamentos de Ciclo de Vida para Ingeniería",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 9,
+    "prerrequisitos": ["3010439"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010680",
+    "nombre": "Práctica de Extensión",
+    "creditos": 6,
+    "obligatoria": false,
+    "agrupacion": "trabajo-grado",
+    "semestre": 10,
+    "prerrequisitos": ["3010439"],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3007425",
+    "nombre": "Cursos de Posgrado",
+    "creditos": 6,
+    "obligatoria": false,
+    "agrupacion": "trabajo-grado",
+    "semestre": 10,
+    "prerrequisitos": ["3010439"],
+    "whatsapp": ""
+  }
+]

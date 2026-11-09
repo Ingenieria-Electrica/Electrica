@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160">
+  <defs>
+    <linearGradient id="iasGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#27AFC9"/>
+      <stop offset="100%" stop-color="#55D1E8"/>
+    </linearGradient>
+    <radialGradient id="iasGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#27AFC9" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#27AFC9" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <circle cx="80" cy="80" r="76" fill="#181D20" stroke="url(#iasGrad)" stroke-width="4"/>
+  <circle cx="80" cy="80" r="66" fill="url(#iasGlow)"/>
+  <!-- Gear / Industry Wheel -->
+  <path d="M80 40 L84 46 L92 45 L94 52 L101 54 L100 61 L107 66 L104 73 L109 80 L104 87 L107 94 L100 99 L101 106 L94 108 L92 115 L84 114 L80 120 L76 114 L68 115 L66 108 L59 106 L60 99 L53 94 L56 87 L51 80 L56 73 L53 66 L60 61 L59 54 L66 52 L68 45 L76 46 Z" fill="none" stroke="#27AFC9" stroke-width="2.5" opacity="0.7"/>
+  <!-- Electric Motor / Rotor and Stator Coils -->
+  <circle cx="80" cy="80" r="22" fill="#242B2F" stroke="#FFBB02" stroke-width="3"/>
+  <!-- Lightning Bolt -->
+  <path d="M82 66 L74 80 L82 80 L78 94 L90 78 L82 78 Z" fill="#FFBB02"/>
+  <text x="80" y="132" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">IEEE IAS</text>
+  <text x="80" y="145" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" font-weight="600" fill="#27AFC9" text-anchor="middle" letter-spacing="1">INDUSTRY APPLICATIONS</text>
+</svg>

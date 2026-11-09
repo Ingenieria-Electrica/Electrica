@@ -1,0 +1,120 @@
+{
+  "componentes": [
+    {
+      "id": "fundamentacion",
+      "nombre": "Fundamentación",
+      "color": "#27AFC9",
+      "descripcion": "Ciencias básicas y matemáticas indispensables para modelar campos electromagnéticos, análisis numérico, señales y principios físicos fundamentales."
+    },
+    {
+      "id": "disciplinar",
+      "nombre": "Formación disciplinar o profesional",
+      "color": "#E58E00",
+      "descripcion": "Sistemas de potencia, máquinas eléctricas, análisis de circuitos, líneas de transmisión, protecciones, control, electrónica, telecomunicaciones y proyectos de ingeniería."
+    },
+    {
+      "id": "libre-eleccion",
+      "nombre": "Libre elección",
+      "color": "#FFBB02",
+      "descripcion": "Créditos de libre elección (20% del plan, 34 créditos) para profundizar en energías renovables, smart grids, normatividad, automatización o áreas interdisciplinares."
+    }
+  ],
+  "agrupaciones": [
+    {
+      "id": "matematicas-probabilidad-estadistica",
+      "componente": "fundamentacion",
+      "nombre": "Matemáticas, Probabilidad y Estadística",
+      "exigidos": 31,
+      "obligatorios": 31,
+      "optativos": 0
+    },
+    {
+      "id": "fisica",
+      "componente": "fundamentacion",
+      "nombre": "Física",
+      "exigidos": 8,
+      "obligatorios": 8,
+      "optativos": 0
+    },
+    {
+      "id": "herramientas-informaticas-metodos-numericos",
+      "componente": "fundamentacion",
+      "nombre": "Herramientas Informáticas y Métodos Numéricos",
+      "exigidos": 7,
+      "obligatorios": 7,
+      "optativos": 0
+    },
+    {
+      "id": "optativas-fundamentacion",
+      "componente": "fundamentacion",
+      "nombre": "Optativas de Fundamentación",
+      "exigidos": 3,
+      "obligatorios": 0,
+      "optativos": 3
+    },
+    {
+      "id": "basicas-disciplinares",
+      "componente": "disciplinar",
+      "nombre": "Básicas Disciplinares",
+      "exigidos": 5,
+      "obligatorios": 5,
+      "optativos": 0
+    },
+    {
+      "id": "sistemas-energia-electrica",
+      "componente": "disciplinar",
+      "nombre": "Sistemas de Energía Eléctrica",
+      "exigidos": 36,
+      "obligatorios": 36,
+      "optativos": 0
+    },
+    {
+      "id": "electronica-comunicaciones",
+      "componente": "disciplinar",
+      "nombre": "Electrónica y Comunicaciones",
+      "exigidos": 12,
+      "obligatorios": 12,
+      "optativos": 0
+    },
+    {
+      "id": "automatizacion-control-instrumentacion",
+      "componente": "disciplinar",
+      "nombre": "Automatización, Control e Instrumentación",
+      "exigidos": 9,
+      "obligatorios": 9,
+      "optativos": 0
+    },
+    {
+      "id": "proyectos-ingenieria",
+      "componente": "disciplinar",
+      "nombre": "Proyectos en Ingeniería",
+      "exigidos": 10,
+      "obligatorios": 10,
+      "optativos": 0
+    },
+    {
+      "id": "optativas-disciplinares",
+      "componente": "disciplinar",
+      "nombre": "Optativas Disciplinares",
+      "exigidos": 9,
+      "obligatorios": 0,
+      "optativos": 9
+    },
+    {
+      "id": "trabajo-grado",
+      "componente": "disciplinar",
+      "nombre": "Trabajo de Grado",
+      "exigidos": 6,
+      "obligatorios": 6,
+      "optativos": 0
+    },
+    {
+      "id": "libre-eleccion",
+      "componente": "libre-eleccion",
+      "nombre": "Libre Elección",
+      "exigidos": 34,
+      "obligatorios": 0,
+      "optativos": 34
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160">
+  <defs>
+    <linearGradient id="pesGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E58E00"/>
+      <stop offset="100%" stop-color="#FFBB02"/>
+    </linearGradient>
+    <radialGradient id="pesGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFBB02" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#E58E00" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <circle cx="80" cy="80" r="76" fill="#1C1817" stroke="url(#pesGrad)" stroke-width="4"/>
+  <circle cx="80" cy="80" r="66" fill="url(#pesGlow)"/>
+  <!-- IEEE Diamond -->
+  <polygon points="80,24 108,80 80,136 52,80" fill="none" stroke="#27AFC9" stroke-width="2.5" opacity="0.6"/>
+  <!-- Sun and Energy Waves / PES Symbol -->
+  <circle cx="80" cy="70" r="16" fill="url(#pesGrad)"/>
+  <path d="M52 94 Q80 82 108 94 Q80 106 52 94" fill="#27AFC9"/>
+  <path d="M48 106 Q80 92 112 106" fill="none" stroke="#FFBB02" stroke-width="3" stroke-linecap="round"/>
+  <text x="80" y="132" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">IEEE PES</text>
+  <text x="80" y="145" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" font-weight="600" fill="#FFBB02" text-anchor="middle" letter-spacing="1">UNAL MEDELLÍN</text>
+</svg>
