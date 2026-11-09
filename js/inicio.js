@@ -152,70 +152,97 @@ function pintarPerfil(perfil) {
 /* ---------- 3. Capítulos Estudiantiles con Diseño Bombilla Bacano ---------- */
 
 function pintarGrupos(grupos) {
-  const bombillas = grupos.map((grupo) => {
-    const destino = grupo.enlace ? `href="${esc(grupo.enlace)}" target="_blank" rel="noopener noreferrer"` : '';
-    
-    return `
-      <li class="tarjeta-bombilla" style="--color-capitulo: ${esc(grupo.color)}; --color-capitulo-acento: ${esc(grupo.colorAcento || '#FFBB02')};">
-        <div class="bombilla-socket-wrap">
-          <div class="bombilla-lampara">
-            <!-- Halo de resplandor electromagnético -->
-            <div class="bombilla-glow" aria-hidden="true"></div>
-            
-            <!-- Filamento de incandescencia interior -->
-            <div class="bombilla-filamento" aria-hidden="true">
-              <svg viewBox="0 0 100 100" class="bombilla-filamento-svg">
-                <path d="M38 72 L38 46 Q38 32 46 32 Q50 32 50 28 Q50 32 54 32 Q62 32 62 46 L62 72" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
-                <circle cx="50" cy="28" r="3" fill="currentColor"/>
-              </svg>
-            </div>
+  const grupo = grupos[0] || {};
+  const destinoIg = grupo.enlace ? `href="${esc(grupo.enlace)}" target="_blank" rel="noopener noreferrer"` : '';
 
-            <!-- Globo de cristal con emblema oficial del capítulo -->
-            <a class="bombilla-globo" ${destino} aria-label="Visitar Instagram de ${esc(grupo.nombre)}" title="Clic para visitar ${esc(grupo.nombre)}">
-              <div class="bombilla-emblema">
-                <img src="${esc(grupo.logo)}" alt="Logo de ${esc(grupo.nombre)}" class="bombilla-emblema-img" loading="lazy">
-              </div>
-              <div class="bombilla-reflejo" aria-hidden="true"></div>
-              <div class="bombilla-badge-ig">
-                <span>${esc(grupo.usuarioIg || 'Instagram')}</span>
-              </div>
-            </a>
+  const liderazgoHtml = (grupo.liderazgo || []).map((l) => `
+    <div class="ampere-persona">
+      <span class="ampere-persona__rol">${esc(l.rol)}</span>
+      <strong class="ampere-persona__nombre">${esc(l.nombre)}</strong>
+      <span class="ampere-persona__estamento">${esc(l.estamento)} · Facultad de Minas</span>
+      <a class="ampere-persona__correo" href="mailto:${esc(l.correo)}" title="Contactar a ${esc(l.nombre)}">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        <span>${esc(l.correo)}</span>
+      </a>
+    </div>
+  `).join('');
 
-            <!-- Rosca metálica Edison (E27) -->
-            <div class="bombilla-rosca" aria-hidden="true">
-              <span class="rosca-aro"></span>
-              <span class="rosca-aro"></span>
-              <span class="rosca-aro"></span>
-              <span class="rosca-pie"></span>
+  const ICONOS_REDES = {
+    ig: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>',
+    fb: '<svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>',
+    yt: '<svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>',
+    web: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>'
+  };
+
+  const redesHtml = (grupo.redes || []).map((r) => `
+    <a class="ampere-red__btn ampere-red__btn--${esc(r.icono)}" href="${esc(r.enlace)}" target="_blank" rel="noopener noreferrer" title="${esc(r.plataforma)}: ${esc(r.usuario)}">
+      ${ICONOS_REDES[r.icono] || ''}
+      <span>${esc(r.plataforma)}</span>
+    </a>
+  `).join('');
+
+  const cardHtml = `
+    <li class="tarjeta-bombilla tarjeta-bombilla--ampere" style="--color-capitulo: ${esc(grupo.color || '#FFBB02')}; --color-capitulo-acento: ${esc(grupo.colorAcento || '#27AFC9')};">
+      <div class="bombilla-socket-wrap">
+        <div class="bombilla-lampara">
+          <!-- Halo de resplandor electromagnético -->
+          <div class="bombilla-glow" aria-hidden="true"></div>
+          
+          <!-- Filamento de incandescencia interior -->
+          <div class="bombilla-filamento" aria-hidden="true">
+            <svg viewBox="0 0 100 100" class="bombilla-filamento-svg">
+              <path d="M38 72 L38 46 Q38 32 46 32 Q50 32 50 28 Q50 32 54 32 Q62 32 62 46 L62 72" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+              <circle cx="50" cy="28" r="3" fill="currentColor"/>
+            </svg>
+          </div>
+
+          <!-- Globo de cristal con emblema oficial de Grupo Ampère -->
+          <a class="bombilla-globo" ${destinoIg} aria-label="Visitar redes oficiales de ${esc(grupo.nombre)}" title="Clic para conectar con ${esc(grupo.nombre)}">
+            <div class="bombilla-emblema">
+              <img src="${esc(grupo.logo)}" alt="Logo oficial de ${esc(grupo.nombre)}" class="bombilla-emblema-img" loading="lazy">
             </div>
+            <div class="bombilla-reflejo" aria-hidden="true"></div>
+            <div class="bombilla-badge-ig">
+              <span>${esc(grupo.usuarioIg || '@ampere_unalmed')}</span>
+            </div>
+          </a>
+
+          <!-- Rosca metálica Edison (E27) -->
+          <div class="bombilla-rosca" aria-hidden="true">
+            <span class="rosca-aro"></span>
+            <span class="rosca-aro"></span>
+            <span class="rosca-aro"></span>
+            <span class="rosca-pie"></span>
           </div>
         </div>
+      </div>
 
-        <div class="tarjeta-bombilla__info">
-          <span class="tarjeta-bombilla__tipo">${esc(grupo.tipo)}</span>
-          <h3 class="tarjeta-bombilla__nombre">${esc(grupo.nombre)}</h3>
-          ${grupo.subtitulo ? `<p class="tarjeta-bombilla__subtitulo">${esc(grupo.subtitulo)}</p>` : ''}
-          <p class="tarjeta-bombilla__desc">${esc(grupo.descripcion)}</p>
+      <div class="tarjeta-bombilla__info">
+        <span class="tarjeta-bombilla__tipo">${esc(grupo.tipo)}</span>
+        <h3 class="tarjeta-bombilla__nombre">${esc(grupo.nombre)}</h3>
+        ${grupo.subtitulo ? `<p class="tarjeta-bombilla__subtitulo">${esc(grupo.subtitulo)}</p>` : ''}
+        <p class="tarjeta-bombilla__desc">${esc(grupo.descripcion)}</p>
 
-          <div class="tarjeta-bombilla__pie">
-            <a class="tarjeta-bombilla__btn" ${destino}>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
-              <span>Conectar en Instagram</span>
-            </a>
-          </div>
+        <!-- Coordinación y Liderazgo -->
+        <div class="ampere-liderazgo">
+          ${liderazgoHtml}
         </div>
-      </li>`;
-  }).join('');
+
+        <!-- Canales y Redes Oficiales -->
+        <div class="ampere-redes">
+          ${redesHtml}
+        </div>
+      </div>
+    </li>`;
 
   $('#grupos-contenido').innerHTML = `
     <div class="seccion-titulo">
       <p class="seccion-titulo__antetitulo">Comunidad & Liderazgo Tecnológico</p>
-      <h2 id="grupos-titulo">Capítulos y Grupos Estudiantiles</h2>
-      <p class="seccion-titulo__intro">Nuestra carrera cuenta con capítulos de la prestigiosa sociedad global IEEE y colectivos técnicos que iluminan el conocimiento en potencia, aplicaciones industriales y robótica. Explora y únete a sus iniciativas.</p>
+      <h2 id="grupos-titulo">Grupo Estudiantil · Grupo Ampère</h2>
+      <p class="seccion-titulo__intro">El Grupo Ampère es el esfuerzo institucional y colectivo estudiantil insignia de Ingeniería Eléctrica en la Facultad de Minas de la Universidad Nacional de Colombia. Un espacio extracurricular donde los estudiantes consolidan valores, liderazgo y competencias técnicas por medio de la autogestión y participación en proyectos reales de ingeniería.</p>
     </div>
-    <ul class="grupos__grid-bombillas">${bombillas}</ul>`;
+    <ul class="grupos__grid-bombillas">${cardHtml}</ul>`;
 }
-
 
 /* ---------- 4. Simulador Interactivo de Flujo de Potencia & Redes Inteligentes ---------- */
 

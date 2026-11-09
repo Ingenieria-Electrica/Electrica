@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" width="180" height="180">
+  <defs>
+    <linearGradient id="ampereGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFBB02"/>
+      <stop offset="50%" stop-color="#FFD000"/>
+      <stop offset="100%" stop-color="#E58E00"/>
+    </linearGradient>
+    <linearGradient id="cianGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00E5FF"/>
+      <stop offset="100%" stop-color="#27AFC9"/>
+    </linearGradient>
+    <radialGradient id="ampereGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFBB02" stop-opacity="0.35"/>
+      <stop offset="70%" stop-color="#E58E00" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#14100F" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Base circular oscura -->
+  <circle cx="90" cy="90" r="86" fill="#14100F" stroke="url(#ampereGrad)" stroke-width="4"/>
+  <circle cx="90" cy="90" r="76" fill="url(#ampereGlow)"/>
+
+  <!-- Líneas concéntricas de campo magnético (Ley de Ampère) -->
+  <circle cx="90" cy="90" r="66" fill="none" stroke="#27AFC9" stroke-width="1.8" stroke-dasharray="6 4" opacity="0.6"/>
+  <circle cx="90" cy="90" r="54" fill="none" stroke="#FFBB02" stroke-width="1.2" stroke-dasharray="4 3" opacity="0.45"/>
+
+  <!-- Flechas orbitales de inducción magnética -->
+  <path d="M88 24 L92 24 L90 20 Z" fill="#27AFC9"/>
+  <path d="M156 88 L156 92 L160 90 Z" fill="#27AFC9"/>
+  <path d="M92 156 L88 156 L90 160 Z" fill="#27AFC9"/>
+  <path d="M24 92 L24 88 L20 90 Z" fill="#27AFC9"/>
+
+  <!-- Emblema Central: Letra "A" de Ampère con rayo de corriente continua y alterna -->
+  <!-- Trazo izquierdo de la A -->
+  <path d="M68 116 L86 52 L94 52 L112 116 L100 116 L94 92 L86 92 L80 116 Z" fill="url(#ampereGrad)" filter="drop-shadow(0 0 4px rgba(255,187,2,0.6))"/>
+  <!-- Vértice interno -->
+  <polygon points="90,66 93,82 87,82" fill="#14100F"/>
+
+  <!-- Rayo / Travesaño electromagnético en Cian Eléctrico -->
+  <path d="M72 88 L88 88 L85 96 L108 84 L92 84 L95 78 Z" fill="url(#cianGrad)" filter="drop-shadow(0 0 6px rgba(0,229,255,0.8))"/>
+
+  <!-- Texto: GRUPO AMPÈRE -->
+  <text x="90" y="136" font-family="'Space Grotesk', 'Outfit', sans-serif" font-size="13" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">GRUPO AMPÈRE</text>
+  <text x="90" y="148" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" font-weight="700" fill="#FFBB02" text-anchor="middle" letter-spacing="1.5">INGENIERÍA ELÉCTRICA</text>
+  <text x="90" y="158" font-family="'Plus Jakarta Sans', sans-serif" font-size="6.5" font-weight="600" fill="#B0A6A5" text-anchor="middle" letter-spacing="1">FACULTAD DE MINAS · UNAL</text>
+</svg>

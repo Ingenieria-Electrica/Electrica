@@ -1395,6 +1395,201 @@
 }
 
 
+/* ---------- Tarjeta Insignia Grupo Ampère ---------- */
+.tarjeta-bombilla--ampere {
+  max-width: 920px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  align-items: center;
+  gap: 36px;
+  text-align: left;
+  padding: 36px 36px 32px;
+}
+
+.tarjeta-bombilla--ampere .bombilla-socket-wrap {
+  margin-bottom: 0;
+  width: 170px;
+  height: 210px;
+}
+
+.tarjeta-bombilla--ampere .bombilla-lampara {
+  width: 150px;
+  height: 200px;
+}
+
+.tarjeta-bombilla--ampere .bombilla-globo {
+  width: 136px;
+  height: 136px;
+}
+
+.tarjeta-bombilla--ampere .bombilla-glow {
+  width: 150px;
+  height: 150px;
+}
+
+.tarjeta-bombilla--ampere .bombilla-emblema {
+  width: 96px;
+  height: 96px;
+}
+
+.tarjeta-bombilla--ampere .bombilla-filamento {
+  width: 80px;
+  height: 80px;
+  top: 22px;
+}
+
+.tarjeta-bombilla--ampere .bombilla-rosca {
+  width: 52px;
+  height: 38px;
+  margin-top: -6px;
+}
+
+.tarjeta-bombilla--ampere .tarjeta-bombilla__info {
+  align-items: flex-start;
+  text-align: left;
+}
+
+.tarjeta-bombilla--ampere .tarjeta-bombilla__nombre {
+  font-size: 26px;
+  margin: 2px 0 4px;
+}
+
+.ampere-liderazgo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+  margin: 18px 0;
+  width: 100%;
+}
+
+.ampere-persona {
+  background: rgba(20, 16, 15, 0.7);
+  border: 1px solid rgba(255, 187, 2, 0.25);
+  border-radius: 14px;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+  transition: border-color .2s ease, transform .2s ease;
+}
+
+.ampere-persona:hover {
+  border-color: var(--volt-amarillo);
+  transform: translateY(-2px);
+}
+
+.ampere-persona__rol {
+  font-family: var(--letra-universidad);
+  font-size: 10.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--volt-amarillo);
+}
+
+.ampere-persona__nombre {
+  font-family: var(--letra-titulo);
+  font-size: 14px;
+  color: #FFF;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.ampere-persona__estamento {
+  font-size: 11.5px;
+  color: #B0A6A5;
+}
+
+.ampere-persona__correo {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--cian-electrico);
+  text-decoration: none;
+  margin-top: 4px;
+  font-weight: 500;
+  transition: color .15s ease;
+}
+
+.ampere-persona__correo:hover {
+  color: #FFF;
+  text-decoration: underline;
+}
+
+.ampere-redes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 6px;
+  width: 100%;
+}
+
+.ampere-red__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #FFF;
+  font-family: var(--letra-universidad);
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all .2s ease;
+}
+
+.ampere-red__btn--ig:hover {
+  border-color: #E1306C;
+  background: rgba(225, 48, 108, 0.18);
+  color: #FF85B3;
+  box-shadow: 0 0 14px rgba(225, 48, 108, 0.4);
+}
+
+.ampere-red__btn--fb:hover {
+  border-color: #1877F2;
+  background: rgba(24, 119, 242, 0.18);
+  color: #72A7FF;
+  box-shadow: 0 0 14px rgba(24, 119, 242, 0.4);
+}
+
+.ampere-red__btn--yt:hover {
+  border-color: #FF0000;
+  background: rgba(255, 0, 0, 0.18);
+  color: #FFA3A3;
+  box-shadow: 0 0 14px rgba(255, 0, 0, 0.4);
+}
+
+.ampere-red__btn--web:hover {
+  border-color: var(--cian-electrico);
+  background: rgba(39, 175, 201, 0.18);
+  color: var(--cian-electrico);
+  box-shadow: 0 0 14px rgba(39, 175, 201, 0.4);
+}
+
+@media (max-width: 820px) {
+  .tarjeta-bombilla--ampere {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 24px;
+    padding: 30px 20px 24px;
+  }
+  .tarjeta-bombilla--ampere .tarjeta-bombilla__info {
+    align-items: center;
+    text-align: center;
+  }
+  .ampere-redes {
+    justify-content: center;
+  }
+  .tarjeta-bombilla--ampere .bombilla-socket-wrap {
+    margin: 0 auto;
+  }
+}
+
 /* =========================================================
    RESPONSIVE DESIGN
    ========================================================= */
