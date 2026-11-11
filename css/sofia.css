@@ -165,6 +165,7 @@
   max-width: calc(100vw - 32px);
   height: min(640px, calc(100vh - 120px));
   max-height: calc(100dvh - 120px);
+  box-sizing: border-box;
   background: var(--sofia-fondo-tarjeta);
   border: 1px solid var(--sofia-borde);
   border-radius: 20px;
