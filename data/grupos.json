@@ -5,8 +5,8 @@
     "sigla": "Ampère",
     "subtitulo": "Grupo Estudiantil Oficial · Ingeniería Eléctrica · UNAL Medellín",
     "tipo": "Grupo Estudiantil de Ingeniería Eléctrica",
-    "logo": "img/grupo-ampere.svg",
-    "color": "#FFBB02",
+    "logo": "img/grupo-ampere.png",
+    "color": "#F9AF00",
     "colorAcento": "#27AFC9",
     "descripcion": "El Grupo Ampère es un esfuerzo institucional, complementario al currículo formal, que se dedica a promover y facilitar el desarrollo y consolidación de competencias y valores de los estudiantes de Ingeniería por medio de la autogestión, liderazgo y participación en proyectos y actividades extracurriculares de ingeniería.",
     "liderazgo": [
@@ -50,6 +50,7 @@
       }
     ],
     "enlace": "https://www.instagram.com/ampere_unalmed/",
-    "usuarioIg": "@ampere_unalmed"
+    "usuarioIg": "@ampere_unalmed",
+    "logoOriginal": "img/grupo-ampere.jpg"
   }
 ]
